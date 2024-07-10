@@ -1,0 +1,56 @@
+<!--Remember the ask.  LOOK at the image and also what is being asked.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samms Movie Database </title>
+    <script src="Movies.js" defer></script>
+    <link rel="stylesheet" href="Movies.css">
+
+</head>
+<body>
+    <!--Navigation section for html goes here
+    where it should be a header will need a few div classes here i guess and class ID's-->
+    <header class="entirenavbar">
+    <div><ul>
+        <!--Will try to get to this navbar but as it's not 100% in the ask saving this till later-->
+        <li ><a class="active" href="#home">T M D B</a></li>
+        <li ><a href="#Movies">Movies</a></li> 
+        <li ><a href="#TV_Shows">TV Shows</a></li>
+        <li ><a href="#People">People</a></li> 
+        <li ><a href="#More">More</a></li> 
+        
+
+        <li style="float:right"><a href="#Join">Join TMDB</a></li>
+        <li style="float:right"><a href="#Login">Login</a></li>
+        <li style="float:right"><a href="#Language">EN</a></li>
+        <li style="float:right"><a href="#">+</a></li> 
+      </ul>
+    </div>
+
+      <!--main section or banner/body -->
+    <div id="banner">
+      <br><br><br><br><br><br>
+      <h1>Welcome.</h1>
+      <h1>Millions of movies, TV shows and people to discover.  Explore now.</h1>
+      <br><br>
+      <div class="input-container">
+        <input type="text" class="search" placeholder="Looking for a movie?">
+        <button id="searchButton">Search</button>
+      </div>
+    </div>
+    <div id="buttons-layer">
+      <h1>Movie Type: <span id="movie-type"></span></h1>
+      <button id="upcoming"> Upcoming Movies</button>
+      <button id="popular"> Popular Movies</button>
+      <button id="top_rated"> Top Rated Movies</button>
+      <br><br>
+    </div>
+    <div class="grid-container">
+        
+    </div>
+
+      </body>
+      </html>
+</body>
+</html>

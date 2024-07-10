@@ -1,0 +1,166 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+/* This section is for the navigation */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #032541;
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-image: linear-gradient(#8cc8ab, #6acabd, #5ec1c1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* The above section is for the navigation */
+#buttons-layer,
+#banner{
+  padding: 0 20px;
+}
+
+button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+.input-container {
+  position: relative;
+  display: flex;
+  min-width: 100px;
+}
+.search {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 40px;
+  width: 70%;
+  padding: 2px 23px 2px 30px;
+  outline: 0;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+}
+
+#banner{
+  height: 400px;
+  background-image: url(https://media.themoviedb.org/t/p/w220_and_h330_face//wWba3TaojhK7NdycRhoQpsG0FaH.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+#banner h1{
+  margin: 0;
+  
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+
+.movie {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.movie-image{
+  height: 410px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.movie-image p {
+  font-size: 15px;
+  height: 100%;
+  margin:0px auto;
+  display:inline-block;
+  padding: 30px 20px 80px 20px;
+  background-color: #ffffffc9;
+  opacity: 0;
+}
+
+.movie:hover .movie-image p {
+  opacity: 1;
+}
+
+
+.movie-info {
+  text-align:left;
+}
+.movie-info h1 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/*my eyes are burning and i can't keep them open. It's currently 3:15am
+im going to do the responsive check and go to bed.  This has been non stop since 5pm*/
+
+
+
+
+
+
+
+
+
+/*responsinve section*/
+
+@media only screen and (min-width: 768px) {
+  .grid-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .grid-container{
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+
